@@ -1,5 +1,6 @@
 import Link from "next/link";
 import CreateNote from "./[id]/CreateNote";
+import styles from './Notes.module.css';
 
 async function getNotes(){
     // Using PocketBase SDK
