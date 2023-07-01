@@ -1,4 +1,5 @@
 import Link from "next/link";
+import CreateNote from "./[id]/CreateNote";
 
 async function getNotes(){
     // Using PocketBase SDK
@@ -24,6 +25,7 @@ export default async function NotesPage(){
                     return <Note key={note.id} note={note}/>
             })}
             </div>
+            <CreateNote/>
         </div>
     );
 }
